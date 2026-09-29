@@ -22,7 +22,9 @@ full reproductions; the list below collects the shorter reports from issues.
   1× batch profile, the first 4× TP4 at 150k (0.28 and 0.29 tied within noise —
   the 0.28→0.29 regression is 1M-specific) and at 1M (0.29 regresses −10 to
   −22 %), the 24 GB mamba-align ceiling (~16–32k per single request) and the
-  cudagraph-64 capture OOM — consolidates the #228 / #229 field reports
+  cudagraph-64 capture OOM, plus a **0.30 follow-up: the 1M regression is
+  unchanged on vLLM 0.30, 1× stays GO** — consolidates the #228 / #229 field
+  reports
 
 ## Results from other hardware
 
