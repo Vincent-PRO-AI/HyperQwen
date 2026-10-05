@@ -13,7 +13,7 @@ set -e
 cd /app
 export PATH=/app/venv/bin:$PATH
 BASE=${BASE_MODEL_DIR:-/app/models/Qwen3.8-27B-W4A16-AutoRound}
-HF_REPO=${HF_REPO:-dbirks/Qwen3.8-27B-W4A16-AutoRound}
+HF_REPO=${HF_REPO:-Arkane-cloud/qwen38-27b-w4a16-autoround}
 # Two prepares racing one model dir can interleave a shard rewrite with an index
 # write and leave the dir inconsistent, and the entrypoint runs prepare before
 # every start, so a booting container races `compose run prepare`. The lock sits

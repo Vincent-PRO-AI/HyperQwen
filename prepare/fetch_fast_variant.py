@@ -43,7 +43,7 @@ for f in ["tokenizer.json", "tokenizer_config.json", "chat_template.jinja", "gen
 assert os.path.exists(os.path.join(D, "tokenizer.json")), (
     f"no tokenizer.json in {S} — the base model dir is incomplete; re-run the download "
     f"(README: Setup) before building the fast variant")
-hub = snapshot_download("syvai/qwen3.8-27b-3090-fast-variant",
+hub = snapshot_download("Arkane-cloud/qwen38-27b-w4a16-autoround-fast",
                         allow_patterns=["model-00007-of-00007.safetensors", "model_extra_tensors.safetensors",
                                         "mtp_draft_vocab_ids.pt", "config.json", "model.safetensors.index.json"])
 # model.safetensors.index.json stays last in this list: it is the file state() checks.
