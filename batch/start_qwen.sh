@@ -270,7 +270,7 @@ qwen_exec venv/bin/vllm serve "$MODEL" \
   $KV_ARGS \
   --mamba-ssm-cache-dtype float16 \
   --async-scheduling \
-  --max-num-batched-tokens 2048 \
+  --max-num-batched-tokens ${BATCH_TOKENS:-2048} \
   --compilation-config "{\"max_cudagraph_capture_size\":64,\"custom_ops\":[\"+rms_norm\",\"+silu_and_mul\"]}" \
   --reasoning-parser qwen3 \
   --enable-prompt-tokens-details \
